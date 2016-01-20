@@ -1,6 +1,6 @@
 {
   "name": "gulp-ngm-datauri",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gulp-datauri",
   "main": "index.js",
   "scripts": {
