@@ -1,0 +1,27 @@
+{
+  "name": "gulp-ngm-datauri",
+  "version": "1.0.0",
+  "description": "gulp-datauri",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhrln/gulp-ngm-datauri.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "datauri"
+  ],
+  "author": "zhangrui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhrln/gulp-ngm-datauri/issues"
+  },
+  "homepage": "https://github.com/zhrln/gulp-ngm-datauri#readme",
+  "dependencies": {
+    "ngm-datauri": "^1.0.1"
+  }
+}
