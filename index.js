@@ -16,11 +16,12 @@ function process(ctn, file){
     var obj = css.parse(ctn);
     obj.stylesheet.rules.forEach(function(rule){
         rule.declarations.forEach(function(n){
-            var url = (n.value.match(/url\((.+)\)/) || [])[1];
+            var regexp = new RegExp('url\\((.+)\\)');
+            var url = (n.value.match(regexp) || [])[1];
             if(url){
                 var filepath = path.join(file.base, url);
                 if(fs.existsSync(filepath)){
-                    n.value = util.format("url(%s)", datauri.base64ImageSync(filepath));
+                    n.value = n.value.replace(regexp, util.format("url(%s)", datauri.base64ImageSync(filepath)));
                 }
             }
         });
